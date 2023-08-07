@@ -21,7 +21,7 @@ Path for R script(s)
 1. "main.R" is the user's interface with the data and scripts
 2. "main.R" calls "setup.R" to install missing packages that are required by this project
 3. "main.R" calls "getdata.R" to download the zipfile and unzip it if needed; otherwise, nothing happens
-4. "main.R" calls "tidyUp.R" to read the raw data and output the tidy data
+4. "main.R" calls "tidyup.R" to read the raw data and output the tidy data
 
 ## How to run the code
 From R or Rstudio, run
