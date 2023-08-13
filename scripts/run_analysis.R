@@ -21,7 +21,7 @@ tidyup<-function(){
         return(joined)
 }
 
-#5
+#5 TODO tidyup even more ... https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
 averages<-function(){
         x<-tidyup()
         y<-x[, lapply(.SD, mean, na.rm=TRUE), by=list(subject,activity)]
@@ -29,12 +29,3 @@ averages<-function(){
         colnames(y)[3:length(colnames(y))]<-as.character(sapply(colnames(y)[3:length(colnames(y))], function(x){paste("average of",x,sep = ":")}))
         return(y)
 }
-
-
-#test_dt[0]<-fread()
-#dt<- rbind(fread(test_data_set,select = cols_to_read),fread(train_data_path,select = cols_to_read))
-#colnames(dt)<-col_names
-#df<-
-# construct each data table seperately
-# # cbind subject_test.txt
-# # cbind activity as factors activity_labels <-> y_{test|train}

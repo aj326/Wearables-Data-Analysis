@@ -18,11 +18,14 @@ Path for R script(s)
 
 ## Logic
 
-1. "main.R" is the user's interface with the data and scripts
-2. "main.R" calls "setup.R" to install missing packages that are required by this project
+1. "getdata.R" downloads zip and extracts it
+2. "path.R" has some variables I use in run_analysis.R
 3. "main.R" calls "getdata.R" to download the zipfile and unzip it if needed; otherwise, nothing happens
 4. "main.R" calls "tidyup.R" to read the raw data and output the tidy data
 
 ## How to run the code
-From R or Rstudio, run
-`main.R`
+From R or Rstudio,
+1. Makes sure you have library "data.table"
+`install.packages("data.table")`
+2. Run getdata.R
+3. Run run_analysis.R
