@@ -12,6 +12,10 @@ This file
 "data/"
 Path for data
 
+"data/raw/out/UCI HAR Dataset"
+This is where the raw files should reside
+
+
 "scripts/"
 Path for R script(s)
 
