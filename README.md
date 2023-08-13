@@ -23,7 +23,10 @@ The codebook:
 
 ##File Structure
 
-I ran tree on the root dir. This is what it should look like
+I ran tree on the root dir.
+`tree`
+
+This is what it should look like:
 
 <!-- language: lang-none -->
     .
@@ -77,7 +80,7 @@ I ran tree on the root dir. This is what it should look like
  
  * *averages.txt is produced after calling `averages(TRUE)` from the script `run_analysis.R`
  
- * **data/ can be constructed by calling `getdata()` from the script `getdata.R`
+ * **data/ can (optionally) be constructed by calling `getdata()` from the script `getdata.R`. Otherwise the user should manually download the zip and place it a folder called "raw"" in a folder called "data". Then extract the zip to a folder called "out""
  
 ## Logic
 
