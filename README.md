@@ -80,7 +80,7 @@ This is what it should look like:
  
  * *averages.txt is produced after calling `averages(TRUE)` from the script `run_analysis.R`
  
- * **data/ can (optionally) be constructed by calling `getdata()` from the script `getdata.R`. Otherwise the user should manually download the zip and place it a folder called "raw" in a folder called "data". Then extract the zip to a folder called "out""
+ * **data/ can (optionally) be constructed by calling `getdata()` from the script `getdata.R`. Otherwise the user should manually download the zip and place it a folder called "raw" in a folder called "data". Then extract the zip to a folder called "out"
  
 ## Logic
 
