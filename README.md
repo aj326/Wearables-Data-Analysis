@@ -21,7 +21,7 @@ The codebook:
         2. describes the data,
         3. describes any transformations or work that performed to clean up the data 
 
-##File Structure
+## File Structure
 
 I ran tree on the root dir.
 `tree`
