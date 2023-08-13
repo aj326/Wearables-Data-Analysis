@@ -1,0 +1,48 @@
+---
+title: "codebook"
+author: "Ahmed"
+date: "2023-08-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Codebook
+This is the codebook for Step 5 in the assignment
+The raw data was collected from the downloaded zip file provided for the assignment. This dataset includes both test and train datasets.
+Using grep, I was able to grab all the mean and std columns I needed for processing
+Then, I built a table for the data
+I appended the subject and activity columns to the data
+I called on mean function, grouped by subject,activity
+
+
+
+
+
+```{r }
+View(read.table(file.path("data","averages.txt"),header = TRUE))
+```
+
+## What do the table columns mean?
+**subject**: A number from 1 to 30. Refers to the subject used in the expirment
+**activity**: The activity from which the data was collected:
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+The following columns refer to the average of the measurement collected:
+**avg**: signifies this is the average of multiple readings
+**...**: name of measurement
+**mean/std**: tells you which kind of measurment taken (mean or std)
+**x,y,z**: which axis the measurement was taken
+
+```{r}
+Columns<-names(read.table(file.path("data","averages.txt"),header = TRUE))
+View(data.frame(Columns))
+```
+
