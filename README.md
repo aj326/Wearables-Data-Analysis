@@ -6,9 +6,9 @@ This README will provide an overview of the structure and logic of the repo.
 
 ## Structure
 
-_"README.md"_:This file
+_"README.md"_: This file
 
-_"data/"_:Path for data
+_"data/"_: Path for data
 
 _"data/raw/out/UCI HAR Dataset"_: This is where the raw files should reside
 
@@ -16,7 +16,8 @@ _"scripts/"_: Path for R script(s)
 
 _"codebook.rmd"_
 
-The codebook: 
+The codebook, which does the following:
+
         1. describes the variables,
         2. describes the data,
         3. describes any transformations or work that performed to clean up the data 

@@ -362,14 +362,21 @@ data analysts make sense of the repo. This README will provide an
 overview of the structure and logic of the repo.</p>
 <div id="structure" class="section level2">
 <h2>Structure</h2>
-<p>“README.md” This file</p>
-<p>“data/” Path for data</p>
-<p>“scripts/” Path for R script(s)</p>
-<p>“codebook.rmd” The codebook: 1. describes the variables, 2. describes
-the data, 3. describes any transformations or work that performed to
-clean up the data</p>
-<p>##File Structure</p>
-<p>I ran tree on the root dir. This is what it should look like</p>
+<p><em>“README.md”</em>: This file</p>
+<p><em>“data/”</em>: Path for data</p>
+<p><em>“data/raw/out/UCI HAR Dataset”</em>: This is where the raw files
+should reside</p>
+<p><em>“scripts/”</em>: Path for R script(s)</p>
+<p><em>“codebook.rmd”</em></p>
+<p>The codebook:</p>
+<pre><code>    1. describes the variables,
+    2. describes the data,
+    3. describes any transformations or work that performed to clean up the data </code></pre>
+</div>
+<div id="file-structure" class="section level2">
+<h2>File Structure</h2>
+<p>I ran tree on the root dir. <code>tree</code></p>
+<p>This is what it should look like:</p>
 <!-- language: lang-none -->
 <pre><code>.
 ├── codebook.rmd
@@ -423,8 +430,11 @@ clean up the data</p>
 <li><p>*averages.txt is produced after calling
 <code>averages(TRUE)</code> from the script
 <code>run_analysis.R</code></p></li>
-<li><p>**data/ can be constructed by calling <code>getdata()</code> from
-the script <code>getdata.R</code></p></li>
+<li><p>**data/ can (optionally) be constructed by calling
+<code>getdata()</code> from the script <code>getdata.R</code>. Otherwise
+the user should manually download the zip and place it a folder called
+“raw” in a folder called “data”. Then extract the zip to a folder called
+“out”</p></li>
 </ul>
 </div>
 <div id="logic" class="section level2">
