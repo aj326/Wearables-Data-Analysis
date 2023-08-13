@@ -32,7 +32,7 @@ averages<-function(write_table=TRUE){
         y<-x[, lapply(.SD, mean, na.rm=TRUE), by=list(subject,activity)]
         #order by subject, activity
         y<-y[order(subject,activity)]
-        #this long line simply appends "average of:" to col names
+        #this long line simply appends "avg." to col names
         colnames(y)[3:length(colnames(y))]<-as.character(sapply(colnames(y)[3:length(colnames(y))], function(x){paste("avg",x,sep = ".")}))
         if(write_table)
                 write.table(y,file=file.path("data","averages.txt"),row.names = FALSE)
